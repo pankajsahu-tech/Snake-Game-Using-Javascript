@@ -15,8 +15,8 @@ body {
 :root {
     /*background colour*/
     --bg-primary-colour: rgb(21, 20, 20);
-    --bg-fill-colour: rgb(218, 112, 163);
-    --bg-food-colour: rgb(159, 7, 20);
+    --bg-fill-colour: rgb(255, 2, 124);
+    --bg-food-colour: rgb(200, 255, 0);
 
 
     /*text colour*/
@@ -80,7 +80,7 @@ section {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: rgb(2, 117, 117);
+    background-color: rgb(215, 154, 20);
     gap: var(--border-radius-md);
 
 }
@@ -91,6 +91,7 @@ section .infos {
     justify-content: space-between;
 
 }
+
 
 .info {
     padding: var(--space-sm) var(--space-md);
@@ -106,12 +107,18 @@ section .infos {
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
 
-
+ /* Background image */
+    background-image: url("Neon\ Grid\ Arcade\ Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+ 
 
 .block {
 
-    border: 1px solid var(--border-primary-colour);
+    /* border: 1px solid var(--border-primary-colour); */
     border-radius: 50%;
 }
 
